@@ -1,0 +1,604 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(238, 238, 238);
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgb(238, 238, 238);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+}
+nav ul li {
+  display: flex;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 15px 25px;
+  color: rgb(80, 80, 80);
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px;
+}
+nav ul :hover {
+  color: white;
+  background-color: rgb(219, 219, 219);
+  transition: all 0.3s ease;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8vh;
+}
+.content {
+  width: 100%;
+  height: 120vh;
+  padding: 50px 50px;
+  color: rgb(51, 51, 51);
+}
+.content1 {
+  display: flex;
+  flex-direction: column;
+  background-image: url("assets/foto1hero2.jpg");
+  animation: fadeIn 1.5s ease-in-out;
+  background-size: cover;
+  background-position: 0px -1px;
+  position: relative;
+  color: white;
+  font-weight: 900;
+  list-style: none;
+  font-size: 30px;
+  gap: 30px;
+  padding-top: 75px;
+}
+
+.hero {
+  background-color: rgba(255, 255, 255, 0.144);
+  display: inline-block;
+  letter-spacing: 3px;
+  padding: 5px 30px;
+  font-size: 50px;
+  font-weight: 900;
+  font-style: normal;
+  text-shadow: 2px 2px 2px rgb(134, 134, 134);
+}
+/* ------------------------------------------------- */
+.content2 {
+  display: flex;
+}
+.pic1 {
+  display: flex;
+  padding: 0 50px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 40%;
+  height: 90%;
+  gap: 50px;
+}
+.detail1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 90%;
+  list-style: none;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 35px;
+  gap: 25px;
+}
+.detail1 ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 25px;
+}
+.detail1 ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.detail1 li p {
+  font-size: 18px;
+}
+.booking {
+  display: flex;
+  margin-top: 25px;
+  width: 35%;
+  padding: 15px;
+  color: white;
+  justify-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: #b6975d;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.booking:hover {
+  color: rgb(255, 255, 255);
+  background-color: #9c7d44;
+}
+/* ------------------Our Chef---------------------- */
+.content3 {
+  display: flex;
+  width: 100%;
+  padding: 150px 50px;
+}
+.detail2 {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+.detail2 ul {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 35px 25px;
+  font-size: 18px;
+}
+.detail2 ul p {
+  padding-right: 20px;
+}
+.pic2 {
+  width: 100%;
+}
+.chefphotos {
+  display: flex;
+  gap: 50px;
+  align-items: start;
+}
+/* -------------------Our Menu---------------- */
+.content4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+}
+.title-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 20px 50px;
+  gap: 10px;
+}
+.title-menu p {
+  font-size: 25px;
+}
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.menu1,
+.menu2,
+.menu3 {
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+.detailmenu1 h3,
+.detailmenu2 h3,
+.detailmenu3 h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.menu-image {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+/* ---------------------Recomended Menu-------------- */
+
+.content5 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 125px 75px;
+}
+.signature-menu {
+  width: 50%;
+  padding: 50px 0;
+  z-index: 5;
+}
+.fotosignature {
+  width: 90%;
+}
+.title-signature {
+  z-index: 1;
+}
+.detail-signatureMenu {
+  display: flex;
+  z-index: 1;
+  padding: 50px 0;
+  flex-direction: column;
+  width: 50%;
+  gap: 35px;
+  font-size: 20px;
+}
+.checkmenu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.digitalMenu {
+  z-index: 1;
+  text-align: center;
+  color: white;
+  width: 50%;
+  padding: 15px;
+  background-color: #b6975d;
+  border-radius: 25px;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.digitalMenu:hover {
+  background-color: #9c7d44;
+  transition: all 0.3s ease;
+}
+/* ---------------------Review----------------- */
+
+.content6 {
+  display: flex;
+  flex-direction: column;
+  background-color: #9c7d44;
+  color: white;
+}
+.title-review {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  padding: 50px;
+  justify-content: center;
+  font-size: 22px;
+}
+.content-review {
+  display: flex;
+  padding: 50px 25px;
+  width: 100%;
+  height: 100vh;
+  gap: 75px;
+}
+.review1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 25px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+/* ----------------Gallery-------------- */
+.content7 {
+  display: flex;
+  width: 100%;
+  height: 150vh;
+  flex-direction: column;
+  gap: 50px;
+  padding: 75px 100px;
+}
+.titlegallery {
+  display: flex;
+  width: 100%;
+  height: 5vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px;
+}
+.gallery1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.gallery2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+/* --------------About Us----------------- */
+.content8 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 75vh;
+  background-color: #9c7d44;
+  color: white;
+}
+.aboutus-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 20px 75px;
+  gap: 25px;
+}
+.openinghours {
+  display: flex;
+}
+.openinghours ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 15px;
+  font-size: 18px;
+}
+.openinghours ul h2 {
+  font-size: 35px;
+}
+.contactus {
+  display: flex;
+}
+.contactus ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+}
+.contactus ul h2 {
+  font-size: 35px;
+}
+.contactus ul li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+}
+.address {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  padding: 0 25px;
+  justify-content: start;
+  align-items: center;
+}
+.alamat {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50vh;
+  padding: 20px 40px;
+  letter-spacing: 1px;
+  justify-content: start;
+}
+.alamat h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.alamat p {
+  font-size: 18px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 10vh;
+  padding-bottom: 75px;
+  justify-content: center;
+  align-items: center;
+  background-color: #9c7d44;
+  color: white;
+}
+/* -----------------------Animasi---------------------- */
+@keyframes slideInTop {
+  from {
+    transform: translateY(-250px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInBottom {
+  from {
+    transform: translateY(250px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-250px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft2 {
+  from {
+    transform: translateX(-500px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(250px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+.detail1,
+.booking {
+  animation-name: slideInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+.pic1 img {
+  animation-name: slideInLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+.detail2 {
+  animation-name: slideInLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+.chef1 {
+  animation-name: slideInTop;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+.chef2 {
+  animation-name: slideInBottom;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+}
+.title-menu,
+.detailmenu1,
+.detailmenu2,
+.detailmenu3 {
+  animation-name: slideInLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+.menu1 img,
+.menu2 img,
+.menu3 img {
+  animation-name: slideInRight;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+.signature-menu img {
+  animation-name: slideInLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+.title-signature {
+  animation-name: slideInLeft2;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+}
+.detailSignature,
+.checkmenu,
+.digitalMenu {
+  animation-name: slideInLeft2;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+.title-review,
+.content-review {
+  animation-name: slideInBottom;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+.aboutus-container,
+.footer p {
+  animation-name: slideInBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+nav ul li {
+  transition: background-color 0.3 ease, transform 0.3s ease;
+}
+nav ul li:hover {
+  transform: scale(1.1);
+}
+.pic1 img {
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Menambahkan transisi */
+}
+.pic1 img:hover {
+  transform: scale(1.1); /* Efek zoom saat hover */
+}
+.booking {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.booking:hover {
+  transform: scale(1.1);
+}
+.pic2 img {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.pic2 img:hover {
+  transform: scale(1.1);
+}
+.menu1 img,
+.menu2 img,
+.menu3 image {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.menu1 img:hover,
+.menu2 img:hover,
+.menu3 img:hover {
+  transform: scale(1.1);
+}
+.digitalMenu {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.digitalMenu:hover {
+  transform: scale(1.1);
+}
+
+.signature-menu {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.signature-menu img:hover {
+  transform: scale(1.1);
+}
+.gallery1 img,
+.gallery2 img {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.gallery1 img:hover,
+.gallery2 img:hover {
+  transform: scale(1.1);
+}
+.maps {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.maps img:hover {
+  transform: scale(1.1);
+}
